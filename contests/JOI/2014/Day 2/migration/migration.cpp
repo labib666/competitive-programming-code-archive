@@ -1,0 +1,93 @@
+/*
+ID: Labib Rashid
+LANG: C++
+TASK: migration
+CONTEST: JOI 2014 Day 2
+*/
+
+#include <vector>
+#include <list>
+#include <map>
+#include <set>
+#include <stack>
+#include <algorithm>
+#include <utility>
+#include <sstream>
+#include <iostream>
+#include <cstdio>
+#include <cmath>
+#include <cstring>
+#include <queue>
+#include <string>
+
+using namespace std;
+
+#define LL long long
+#define PII pair<int,int>
+#define PLL pair<LL,LL>
+#define VI vector <int>
+#define VLL vector <LL>
+#define PQI priority_queue <int>
+#define PQLL priority_queue <LL>
+#define QI queue <int>
+#define QLL queue <LL>
+#define X first
+#define Y second
+#define PB push_back
+#define MP make_pair
+#define SZ size()
+#define INF 1000000007ll
+#define LINF 1000000000000000007
+#define PI 2*asin(1)
+#define EPS 1e-9
+
+#define FOR(I,A,B) for(LL I = (A); I < (B); ++I)
+#define REP(I,N)   FOR(I,0,N)
+#define ALL(A)     ((A).begin(), (A).end())
+#define MEM(A,V)   memset (A, (V), sizeof A)
+
+
+int gcd (int a, int b){return (b > a) ? gcd (b,a) : (b == 0) ? a : gcd (b, a%b);}
+int bitcount (int a) {return (a != 0) ? bitcount(a & (a-1)) + 1 : 0;}
+LL bigmod (LL num, LL pow, LL prime) {
+    if (pow == 0ll) return 1ll;
+    LL ans = bigmod(num, pow/2ll, prime); ans = (ans*ans)%prime;
+    if (pow%2ll) ans = (ans*num)%prime; return ans;
+}
+
+struct point {
+    LL X, Y, Z;
+    bool operator < (const point &p) const {
+        if (MP(X,Y) == MP(p.X,p.Y)) return Z < p.Z;
+        return MP(X,Y) < MP(p.X,p.Y);
+    }
+};
+
+LL N, M, L, c[505], uu, vv;
+point p[505]; VLL v[505];
+vector <PLL> a;
+
+int main()
+{
+    ios_base::sync_with_stdio(0); cin.tie(0);
+
+    freopen ("input.txt","r",stdin);
+    //freopen (".in","r",stdin);
+    freopen ("out1.txt","w",stdout);
+
+    cin >> N >> M;
+    while(M--) {
+        cin >> uu >> vv;
+        if (uu > vv) swap (uu,vv);
+        v[vv].PB (uu);
+    }
+
+    cin >> L;
+    FOR (i,0,L) { cin >> p[i].X >> p[i].Y; p[i].Z = i+1; }
+    sort (p,p+L);
+
+    FOR (i,0,N) cout << p[i].Z << endl;
+
+
+    return 0;
+}

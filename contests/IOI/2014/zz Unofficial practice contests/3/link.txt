@@ -1,0 +1,9 @@
+2 problems taken from ioi 2010 (waterloo)
+
+solved - 2/2
+left - none
+
+links:
+
+1) http://wcipeg.com/problem/ioi1022
+2) http://wcipeg.com/problem/ioi1013

@@ -1,0 +1,7 @@
+Nafis vai list + treap
+Past IOI
+Past COCI
+Past USACO
+Graph problems
+DP optimizations
+manachar 

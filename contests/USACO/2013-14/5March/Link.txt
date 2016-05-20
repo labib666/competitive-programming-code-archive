@@ -1,0 +1,11 @@
+solved - 3/9 
+
+Remaining -
+
+Gold - (1)
+
+Silver - (2), (3)
+
+Bronze - (1), (2), (3)
+
+Tips - Study Erds–Gallai theorem proof + Learn Linesweep algo + manhattan distance trick

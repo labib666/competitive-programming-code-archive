@@ -1,0 +1,13 @@
+Solved - 3/3
+Left - none
+
+Problems from past IOI (2006)
+
+Links -
+1) http://wcipeg.com/problem/ioi0612
+2) http://wcipeg.com/problem/ioi0621
+3) http://wcipeg.com/problem/ioi0611
+
+(wcipeg login & pass required)
+login: Labib666
+pass:  rashid666

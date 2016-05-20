@@ -1,0 +1,8 @@
+6 problems taken from ioi 2012 (italy)
+
+solved - 2/6
+left - 2rings(20%), 1pebble(58%), 4city(55%), 6supper(18%)
+
+links:
+
+http://wcipeg.com/problems/cat%3Dioi%2Cshow%3D50/50

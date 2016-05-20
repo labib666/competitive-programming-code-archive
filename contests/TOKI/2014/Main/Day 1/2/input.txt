@@ -1,0 +1,23 @@
+5 4 3
+a b c d c
+a b d d c
+a.cd.
+.b...
+..cde
+...d.
+..cd.
+
+output : 3
+
+
+6 3 3
+a b c d c d
+a b d c d c
+abc..
+ab...
+..cde
+..cde
+..cde
+..cde
+
+output : 30
