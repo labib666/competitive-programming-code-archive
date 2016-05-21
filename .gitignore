@@ -1,3 +1,6 @@
+# ignore itself
+*.gitignore
+
 # no file ending with ~ sign
 *~
 
